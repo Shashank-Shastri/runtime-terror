@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Peace</title>
+  <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+<link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/slides.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/login.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body onload="getQuote()">
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">Quotes</a></li>
+          <li><a href="#services">Features</a></li>
+          <li><a href="#portfolio">Application</a></li>
+          <li><a href="#team">Team</a></li>
+        
+          <li><a href="#contact">Contact Us</a></li>
+        <a class="login-trigger" href="#" data-target="#login" data-toggle="modal"><i class="fa fa-sign-in"></i></a>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- #header -->
+<!-- #nav-menu-container -->
+    <div id="login" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button data-dismiss="modal" class="close">&times;</button>
+            <h4>Admin Login</h4>
+            <form>
+              <input type="text" name="username" id="username" class="username form-control" placeholder="Username"/>
+              <input type="password" name="password" id="password" class="password form-control" placeholder="Password"/>
+              <center><span id="login_failed"></span></center>
+              <center><div class="btn login" value="Login" id="btnlogin" onclick="login()" >Login</div></center>
+            </form>
+          </div>
+        </div>
+      </div>  
+    </div>
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Peace</h1>
+      <h2>Improve your Mental Health</h2>
+      <a href="#about" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Quotes
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+        </div>
+        <div class= "new">
+          <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <div class="text" id="quote"></div>
+    <div class="numbertext" id="author"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="getQuote()">&#10094;</a>
+  <a class="next" onclick="getQuote()">&#10095;</a>
+</div>
+<br>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Features</h3>
+          <p class="section-description">Different Features provided by our Application</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-book"></i></a></div>
+              <h4 class="title"><a href="">Quotes</a></h4>
+              <p class="description">Motivational Quotes to keep you Motivated</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-podcast"></i></a></div>
+              <h4 class="title"><a href="">Meditation</a></h4>
+              <p class="description">Meditation is a powerful tool for the Peace of mind</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-hospital-o"></i></a></div>
+              <h4 class="title"><a href="">Pro Recovery tips</a></h4>
+              <p class="description">Recovery is an ongoing process. It is normal to have setbacks and difficulties along the way.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-child"></i></a></div>
+              <h4 class="title"><a href="">Yoga</a></h4>
+              <p class="description">Yoga helps to keep our body calm which helps in mental health Improvement</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-video-camera"></i></a></div>
+              <h4 class="title"><a href="">Videos</a></h4>
+              <p class="description">Different videos are available for the Guidance of the User</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-music"></i></a></div>
+              <h4 class="title"><a href="">Music</a></h4>
+              <p class="description">Music plays an important role for a calm mind</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title" id="appName">Peace</h3>
+          <p class="section-description"></p>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="img/application/Page 1.jpeg" target=”_blank”>
+              <img src="img/application/Page 1.jpeg" alt="">
+              <div class="details">
+                <h4>Page 1</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="img/application/Page 2.jpeg" target=”_blank”>
+              <img src="img/application/Page 2.jpeg" alt="">
+              <div class="details">
+                <h4>Page 2</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="img/application/Page 3.jpeg" target=”_blank”>
+              <img src="img/application/Page 3.jpeg" alt="">
+              <div class="details">
+                <h4>Page 3</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+         <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="img/application/page 4.jpeg" target=”_blank”>
+              <img src="img/application/page 4.jpeg" alt="">
+              <div class="details">
+                <h4>Page 4</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="img/application/page 5.jpeg" target=”_blank”>
+              <img src="img/application/page 5.jpeg" alt="">
+              <div class="details">
+                <h4>Page 5</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="img/application/page 6.jpeg" target=”_blank”>
+              <img src="img/application/page 6.jpeg" alt="">
+              <div class="details">
+                <h4>Page 6</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="img/application/page 7.jpeg" target=”_blank”>
+              <img src="img/application/page 7.jpeg" alt="">
+              <div class="details">
+                <h4>Page 7</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="img/application/page 8.jpeg" target=”_blank”>
+              <img src="img/application/page 8.jpeg" alt="">
+              <div class="details">
+                <h4>Page 8</h4>
+                <span> </span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">  </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/Chaitanya.jpeg" alt=""></div>
+              <h4>Chaitanya Jadhav</h4>
+              <span>App Developer</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/Shiva.jpeg" alt=""></div>
+              <h4>Shiva Pandey</h4>
+              <span>Web Developer</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/Altmash.jpeg" alt=""></div>
+              <h4>Altamash Bebal</h4>
+              <span>App Developer</span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/Shashank.jpeg" alt=""></div>
+              <h4>Shashank Shastri</h4>
+              <span>Web Developer</span>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description"> </p>
+        </div>
+      </div>
+
+      
+
+          </div>
+          <center>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" onsubmit="contactForm()" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <h></h>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="messageForm" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </center>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/slides.js"></script>
+  <!-- <script src="js/quotes.js"></script> -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/firebase.js"></script>
+
+
+</body>
+</html>
